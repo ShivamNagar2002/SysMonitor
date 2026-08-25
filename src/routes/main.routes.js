@@ -14,7 +14,7 @@ router.get("/api/get-system-data" , async (req, res) => {
     const systemInfo = {
         platform: os.platform(),           
         architecture: os.arch(),   
-        cpuBrand : cpu.brand    ,     
+        cpuBrand : os.cpus()[0].model   ,     
         cpuCores: os.cpus().length,         
         totalMemoryGB: (os.totalmem() / 1024 / 1024 / 1024).toFixed(2), // converting into GB
         freeMemoryGB: (os.freemem() / 1024 / 1024 / 1024).toFixed(2),   
