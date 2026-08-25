@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="getData.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SysMonitor</title>
+</head>
+
+<body>
+    <header>
+        <h1>SysMonitor</h1>
+    </header>
+    <main>
+
+        <div>
+            <fieldset>
+                <legend>System Info</legend>
+                <table style="min-width: 60%;">
+                    <tr>
+                        <th>Host</th>
+                        <td id="hostNameText"> loading...</td>
+                    </tr>
+                    <tr>
+                        <th>OS </th>
+                        <td id="osName">
+                            loading...
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Uptime </th>
+                        <td >
+                           <a id="upTime"> loading ... </a> <code>Hrs</code>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>CPU Stats</legend>
+                <table style="min-width: 60%;">
+
+                    <tr>
+                        <th>CPU </th>
+                        <td id="cpu_name">
+                            loading ... <br>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <th>Arch</th>
+                        <td id="arch">
+                            loading ...
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Cores </th>
+                        <td id="cpu_cores">
+                            loading ...
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th> Utilization </th>
+                        <td><progress id="cpu-load-bar" value="0" max="100"></progress>
+                            <a id="cpu-load"></a>  <sup>%</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Speed </th>
+                        <td>
+                            <a id="cpuSpeed"> loading... </a> <code>Ghz</code>
+                        </td>
+
+                    </tr>
+
+
+                </table>
+
+
+            </fieldset>
+
+            <!-- RAM data displayed below-->
+
+            <fieldset>
+                <legend>RAM</legend>
+                <table style="min-width: 60%;">
+
+                    <tr>
+                        <th>In-Use </th>
+                        <td>
+                            <a id="ram_in_use"></a> <sup>GB</sup>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>Utilization</th>
+                        <td>
+                            <progress id="ram-load-bar" value="0 " max="100"></progress>
+                            <a id="ram-load"> loading ...</a>  <sup>%</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Available </th>
+                        <td>
+                            <a id="free_ram"> loading ...</a> <sup>GB</sup>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>Total Memory</th>
+                        <td id="total_ram"> loading ...</td>
+                    </tr>
+
+
+                </table>
+
+
+            </fieldset>
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        
+       
+ 
+
+<i class="fa fa-github" style="font-size:18px"></i> <a href="https://github.com/ShivamNagar2002/SysMonitor"> SysMonitor </a>
+</body>
+
+</html>
